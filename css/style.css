@@ -1,0 +1,86 @@
+/* My Custom Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+.hero-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('../images/hero-bg.jpg') center/cover no-repeat;
+    height: 500px;
+    color: white;
+}
+
+/* Services Section */
+.service-card {
+    box-shadow: 0 2px 4px #0000001a;
+    margin-bottom: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* Featurette Section */
+.featurette i {
+    color: var(--primary-color);
+}
+
+/* About Section */
+.sidebar {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar li {
+    margin-bottom: 1rem;
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #0000001a;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+
+/* Footer */
+.footer {
+    background: #212529;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.social-links a:hover {
+    color: #0d6efd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-header {
+        height: 400px;
+    }
+    
+    .service-card {
+        margin-bottom: 1.5rem;
+    }
+}
